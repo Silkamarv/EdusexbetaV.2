@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/campoNombre"
+        android:layout_width="341dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="21dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:hint="Usuario"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoapp" />
+
+    <EditText
+        android:id="@+id/Campopassword"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoNombre" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38dp"
+        android:layout_marginLeft="58dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="28dp"
+        android:text="Iniciar sesión"
+        app:layout_constraintEnd_toStartOf="@+id/registro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Campopassword"
+        android:onClick="Iniciar"/>
+
+    <Button
+        android:id="@+id/registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="28dp"
+        android:text="Registrarse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/login"
+        app:layout_constraintTop_toBottomOf="@+id/Campopassword"
+        android:onClick="Registrarse"/>
+
+    <ImageView
+        android:id="@+id/logoapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="64dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="43dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logoo" />
+
+</android.support.constraint.ConstraintLayout>
