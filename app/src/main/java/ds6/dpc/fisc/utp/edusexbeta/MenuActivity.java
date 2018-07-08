@@ -20,18 +20,22 @@ public class MenuActivity extends AppCompatActivity {
         {
             case R.id.btntemas:
                 miIntent = new Intent (MenuActivity.this,TemasActivity.class);
+                startActivity(miIntent);
                 break;
 
             case R.id.btnglosario:
                 miIntent = new Intent (MenuActivity.this,GlosarioActivity.class);
+                startActivity(miIntent);
                 break;
 
             case R.id.btnjugar:
                 miIntent = new Intent (MenuActivity.this,JugarActivity.class);
+                startActivity(miIntent);
                 break;
 
             case R.id.btnperfil:
                 miIntent = new Intent (MenuActivity.this,PerfilActivity.class);
+                startActivity(miIntent);
                 break;
         }
     }

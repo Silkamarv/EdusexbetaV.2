@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Edusex</string>
+
+    <string name="check">Comprueba</string>
+    <string name="question">Pregunta</string>
+    <string name="correct">Muy bien!</string>
+    <string name="incorrect">Incorrecto...</string>
+    <string name="next">Siguiente</string>
+    <string name="finish">Finalizar</string>
+    <string name="prev">Anterior</string>
+    <string name="results">Resultados</string>
+    <string name="start_over">Volver a Empezar</string>
+
+    <array name="all_questions">
+        <item>En la actualidad, la sexualidad se considera:;*Una faceta más de la persona;Una necesidad.;Una forma de expresión corporal.;Un mito.</item>
+        <item>La sexualidad es:;Una elección impuesta;Un sentimiento;*Una elección personal;Un valor cultural</item>
+        <item>¿A partir de que edad se deben tener relaciones sexuales?;Éntrelos 15 y los 18 años.;Cuando uno es mayor de edad.;*No existe una edad establecida, cada persona decide cuando esta preparada.;En cuanto empiezan a tener relaciones mis amigos.</item>
+        <item>¿Esta mal no haber tenido nunca relaciones sexuales?;Si, porque se ríen de ti.;No, porque la persona no es libre para decirlo.;*No, cada persona decide cuando se siente preparada.;Si, porque no sabes lo que es el sexo.</item>
+    </array>
 </resources>

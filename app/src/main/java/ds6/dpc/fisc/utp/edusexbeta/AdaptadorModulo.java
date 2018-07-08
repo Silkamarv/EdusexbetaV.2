@@ -26,7 +26,7 @@ public class AdaptadorModulo  extends RecyclerView.Adapter<AdaptadorModulo.ViewH
     public void onBindViewHolder(ViewHolderModulo holder, int position) {
 
      holder.etiNombre.setText(listaModulos.get(position).getNombre());
-        holder.etiInformacion.setText(listaModulos.get(position).getFoto());
+        holder.etiInformacion.setText(listaModulos.get(position).getInfo());
         holder.foto.setImageResource(listaModulos.get(position).getFoto());
 
     }
