@@ -1,39 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".JugarActivity"
-    android:orientation="vertical">
-
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="112dp"
-        android:layout_height="111dp"
-        android:layout_gravity="center"
-        app:srcCompat="@drawable/jugar" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="JUGAR"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_gravity="center"
-        android:layout_marginBottom="15dp"/>
-
-
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:layout_gravity="center"
     android:paddingBottom="16dp"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    android:paddingTop="16dp"
-    >
+    android:paddingTop="16dp">
 
     <TextView
         android:layout_width="wrap_content"
@@ -46,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/text_question"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:textColor="?android:attr/textColorPrimary"
         android:layout_marginTop="8dp"
         android:layout_below="@+id/label_question"
@@ -80,57 +56,50 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/answer1"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:textSize="16sp"/>
 
         <RadioButton
             android:text="RadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/answer2"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:textSize="16sp"/>
 
         <RadioButton
             android:text="RadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/answer3"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:textSize="16sp"/>
 
         <RadioButton
             android:text="RadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/answer4"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:textSize="16sp"/>
     </RadioGroup>
 
-
-</LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
+    <Button
+        android:text="@string/next"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/btn_check" />
 
-        <Button
-            android:id="@+id/btn_check"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginLeft="50dp"
-            android:text="@string/next" />
+    <Button
+        android:text="@string/prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/btn_prev" />
 
-        <Button
-            android:id="@+id/btn_prev"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginLeft="95dp"
-            android:text="@string/prev" />
-    </LinearLayout>
-
-</LinearLayout>
+</RelativeLayout>
